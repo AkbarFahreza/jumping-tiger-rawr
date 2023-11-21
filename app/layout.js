@@ -1,7 +1,7 @@
-import Head from "next/head";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import BottomBar from "@/components/BottomBar";
+
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "DekReza Portfolio Page",

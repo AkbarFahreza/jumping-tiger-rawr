@@ -86,12 +86,6 @@ function page() {
             </p>
           </div>
           <div className="mt-4">
-            <div className="flex flex-row justify-between">
-              <p className="text-2xl font-bold text-pink">Portfolio</p>
-              <button className="bg-secondary border-2 text-xs border-white rounded-full py-1 px-3 text-white">
-                More
-              </button>
-            </div>
             <HomePortfolio />
             <div className="flex flex-row justify-between mt-6">
               <p className="text-2xl font-bold text-pink">Might Help You</p>
