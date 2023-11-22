@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-
 import Image from "next/image";
 
 import HomePortfolio from "@/components/home_feed/HomePortfolio";
 import HomeGuide from "@/components/home_feed/HomeGuide";
+import Socmed from "@/components/home_feed/Socmed";
 
 function page() {
   const text = `Hi!, I'm a junior graphic designer and programmer, i specialize in crafting custom CSS for YouTube Livechat to elevate your livestreams. Open for commissions—let's team up for personalized CSS magic on your livestreams!`;
@@ -75,7 +75,7 @@ function page() {
             </div>
           </div>
           <div className="mt-4">
-            <p className="text-white max-w-4 text-ellipsis overflow-hidden">
+            <p className="text-white max-w-4 mobile-subtitle text-ellipsis overflow-hidden">
               {truncatedText}
               <button
                 onClick={toggleTruncate}
@@ -85,14 +85,9 @@ function page() {
               </button>
             </p>
           </div>
+          <Socmed />
           <div className="mt-4">
             <HomePortfolio />
-            <div className="flex flex-row justify-between mt-6">
-              <p className="text-2xl font-bold text-pink">Might Help You</p>
-              <button className="bg-secondary border-2 text-xs border-white rounded-full py-1 px-3 text-white">
-                More
-              </button>
-            </div>
             <HomeGuide />
           </div>
         </div>

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Loading from "./LoadingGuide";
+import Loading from "./Loading";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ function HomePortfolio() {
   useEffect(() => {
     async function fetchItems() {
       try {
-        const response = await fetch("/api/pwortidokio");
+        const response = await fetch("/api/portfolio");
         const data = await response.json();
         setOriginalDataLength(data[0].data.length);
 
@@ -43,7 +43,7 @@ function HomePortfolio() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-row justify-between">
-        <p className="text-2xl font-bold text-pink">Portfolio</p>
+        <p className="mobile-heading-b font-bold text-pink">Portfolio</p>
         <button
           href="/portfolio"
           className="bg-secondary border-2 text-xs border-white rounded-full py-1 px-3 text-white"
@@ -51,7 +51,6 @@ function HomePortfolio() {
           More
         </button>
       </div>
-      {/* <div id="renderData" className="flex"> */}
       {loading ? (
         <Loading />
       ) : (
@@ -70,7 +69,9 @@ function HomePortfolio() {
                 src={item.image}
               />
               <div className="mt-2">
-                <h1 className="font-bold text-white">{item.name}</h1>
+                <h1 className="font-bold mobile-title-b text-white">
+                  {item.name}
+                </h1>
               </div>
             </Link>
           ))}

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Loading from "./LoadingGuide";
+import Loading from "./Loading";
 
 function truncateText(text, maxLength) {
   if (text.length <= maxLength) {
@@ -31,7 +31,13 @@ function HomeGuide() {
   }, []);
 
   return (
-    <div>
+    <div className="flex flex-col">
+      <div className="flex flex-row justify-between mt-6">
+        <p className="mobile-heading-b text-pink">Might Help You</p>
+        <button className="bg-secondary border-2 text-xs border-white rounded-full py-1 px-3 text-white">
+          More
+        </button>
+      </div>
       {loading ? (
         // Render a loading spinner while fetching data
         <Loading />
@@ -47,10 +53,9 @@ function HomeGuide() {
                 src={item.thumbnail}
               />
               <div className="flex flex-col whitespace-normal mt-3">
-                <h1 className="text-white font-bold">{item.title}</h1>
+                <h1 className="text-white mobile-title-b">{item.title}</h1>
                 <p className="text-white text-xs mt-2">
-                  {truncateText(item.desc, 100)}{" "}
-                  {/* Adjust the maxLength as needed */}
+                  {truncateText(item.desc, 100)}
                 </p>
               </div>
             </div>
