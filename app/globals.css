@@ -1,3 +1,4 @@
+@import "~@fortawesome/fontawesome-svg-core/styles.css";
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
@@ -15,5 +16,29 @@
   p,
   h1 {
     @apply font-poppins;
+  }
+  .mobile-container {
+    @apply mx-6;
+  }
+  .mobile-price {
+    @apply text-3xl font-bold;
+  }
+  .mobile-heading-b {
+    @apply text-lg font-bold;
+  }
+  .mobile-heading {
+    @apply text-lg;
+  }
+  .mobile-title-b {
+    @apply text-base font-bold;
+  }
+  .mobile-title {
+    @apply text-base;
+  }
+  .mobile-subtitle-b {
+    @apply text-sm font-bold;
+  }
+  .mobile-subtitle {
+    @apply text-sm;
   }
 }
