@@ -56,7 +56,12 @@ function page() {
       {isLoading ? (
         <ProgressBar progress={progress} />
       ) : (
-        <div className="relative">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="relative"
+        >
           <section>
             <Image
               width={700}
@@ -69,7 +74,7 @@ function page() {
               <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.7 }}
                 className="flex items-center flex-row"
               >
                 <Image
@@ -90,7 +95,12 @@ function page() {
                   </div>
                 </div>
               </motion.div>
-              <div className="mt-4">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, delay: 0.3 }}
+                className="mt-4"
+              >
                 <p className="text-white max-w-4 mobile-subtitle text-ellipsis overflow-hidden">
                   {truncatedText}
                   <button
@@ -100,7 +110,7 @@ function page() {
                     {truncated ? "More" : "Less"}
                   </button>
                 </p>
-              </div>
+              </motion.div>
               <Socmed />
               <div className="mt-4">
                 <HomePortfolio />
@@ -108,7 +118,7 @@ function page() {
               </div>
             </div>
           </section>
-        </div>
+        </motion.div>
       )}
     </div>
   );

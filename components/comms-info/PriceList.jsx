@@ -65,28 +65,22 @@ function PriceList() {
         <div className="px-6 py-3 w-full justify-center flex flex-col">
           <ul className="list-disc text-white leading-5 space-y-2">
             <li className="">
-              <span className="mobile-title-b">Chat only </span>
+              <span className="mobile-title-b">All Chat and Events </span>
               <span className="mobile-subtitle">
-                (Supperchat Etc. default style from YouTube).
+                (include Supperchat, Member Join, Member Gift, etc. ).
               </span>
             </li>
             <li>
               <span className="mobile-title-b">
-                Support for different colors/designs between
-              </span>
-              <span className="mobile-subtitle">
-                {" "}
-                : Owner, Moderator, General Viewer, and membership.
+                Get everything in the BASIC package
               </span>
             </li>
             <li>
               <span className="mobile-title-b">
-                {" "}
-                Shapes and colors can be adjusted{" "}
+                The superchat design can be adjusted based on Tier{" "}
               </span>
               <span className="mobile-subtitle">
-                {" "}
-                upon request (if possible).
+                (If possible and an additional fee will be charged).
               </span>
             </li>
           </ul>

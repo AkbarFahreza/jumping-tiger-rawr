@@ -14,7 +14,9 @@ function Page() {
   return (
     <div className="relative mobile-container">
       <div className="flex flex-row justify-between items-center  my-6">
-        <p className="mobile-heading-b text-white">Status : Open</p>
+        <p className="mobile-heading-b text-white">
+          Status : <span className="text-green-500">Open</span>
+        </p>
         <div className="flex flex-row space-x-3">
           <button
             className={`py-1 px-3 border-2 border-white text-white mobile-subtitle-b rounded-full ${

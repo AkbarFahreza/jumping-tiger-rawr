@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 
 function BottomBar() {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <ul className="w-full bg-secondary py-2 flex flex-row justify-evenly fixed bottom-0 left-0">
       <Link href="/">

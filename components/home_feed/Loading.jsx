@@ -1,5 +1,4 @@
 import React from "react";
-
 function Loading() {
   return (
     <div className="flex flex-col justify-center mx-auto mt-5">
