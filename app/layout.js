@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <meta property="og:title" content="DekReza Portfolio Page" />
       <meta
         property="og:description"
-        content="i still thinking what kinda good description is"
+        content="Hi i am Reza, i do coding custom YT CHAT CSS for Vtuber/Streamer, open for collaboration projects, take a look my portfolis here ✨"
       />
       <meta
         property="og:image"
