@@ -146,8 +146,9 @@ const items = [
           "https://pbs.twimg.com/media/F9NAF2HaAAAe2on?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1716786883265806588?s=20",
         category: "YT Chat Commissions",
-        Datecreated: "",
+        Datecreated: "Oktober 2023",
       },
+
       // {
       //   id: 5,
       //   name: "",

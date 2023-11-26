@@ -15,18 +15,12 @@ function HomePortfolio() {
         const response = await fetch("/api/portfolio");
         const data = await response.json();
         setOriginalDataLength(data[0].data.length);
-
-        // Filter items with the category "commission"
         const commissionItems = data[0].data.filter(
-          (item) => item.category === "commission"
+          (item) => item.category === "YT Chat Commissions"
         );
-
-        // Sort commission items based on ID in descending order
         const sortedCommissionItems = commissionItems.sort(
           (a, b) => b.id - a.id
         );
-
-        // Take only the top 4 commission items
         const top4CommissionItems = sortedCommissionItems.slice(0, 4);
 
         setItems(top4CommissionItems);

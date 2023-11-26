@@ -41,4 +41,12 @@
   .mobile-subtitle {
     @apply text-sm;
   }
+
+  .tab {
+    @apply text-white mobile-subtitle-b border-2 border-white bg-secondary py-1 px-3 rounded-full;
+  }
+
+  .active-tab {
+    @apply text-white mobile-subtitle-b border-2 border-white bg-pink py-1 px-3 rounded-full;
+  }
 }
