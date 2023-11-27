@@ -15,7 +15,7 @@ function Page() {
     <div className="relative mobile-container">
       <div className="flex flex-row justify-between items-center  my-6">
         <p className="mobile-heading-b text-white">
-          Status : <span className="text-green-500">Open</span>
+          Status : <span className="text-yellow-500">WaitList</span>
         </p>
         <div className="flex flex-row space-x-3">
           <button
