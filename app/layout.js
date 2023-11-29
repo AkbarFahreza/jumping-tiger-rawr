@@ -28,14 +28,8 @@ export default function RootLayout({ children }) {
       <link rel="icon" href="/Profile_pict.png" />
       {/* <meta property="og:url" content="https://yourwebsite.com" /> */}
       <body className={`${inter.className} relative min-h-[100vh]`}>
-        <div className="block md:hidden ">
+        <div className="">
           {children} <BottomBar />
-        </div>
-        <div className="hidden md:flex min-h-[100vh]">
-          <p className="py-5 px-10 text-center bg-white text-main rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 font-bold text-3xl -translate-y-1/2">
-            Nooo This Website is under construction for the desktop view, please
-            change into mobile view
-          </p>
         </div>
       </body>
     </html>
