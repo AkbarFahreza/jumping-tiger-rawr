@@ -2,9 +2,9 @@ import React from "react";
 
 function PriceList() {
   return (
-    <div className=" flex flex-col space-y-5 pb-[10vh] ">
-      <div className="w-full min-h-[300px] overflow-hidden  rounded-xl shadow-xl bg-secondary">
-        <div className="w-full h-[70px] bg-purple flex flex-row justify-between px-6 items-center">
+    <div className=" flex flex-col lg:flex-row lg:gap-6 lg:space-y-0  space-y-5 pb-[10vh] ">
+      <div className="w-full min-h-[300px] overflow-hidden  rounded-xl shadow-xl h-[50vh] lg:align-top bg-secondary">
+        <div className="w-full h-[70px] bg-purple flex flex-row justify-between px-6 lg:px-10 items-center">
           <h1 className="mobile-price text-white">Basic</h1>
           <div className=" text-white leading-4">
             <p className="mobile-title">
@@ -16,7 +16,7 @@ function PriceList() {
             </p>
           </div>
         </div>
-        <div className="px-6 py-3 w-full justify-center flex flex-col">
+        <div className="px-6 lg:px-10 py-3 w-full justify-center flex flex-col">
           <ul className="list-disc text-white leading-5 space-y-2">
             <li className="">
               <span className="mobile-title-b">Chat only </span>
@@ -44,13 +44,13 @@ function PriceList() {
               </span>
             </li>
           </ul>
-          <button className="bg-secondary border-2 mobile-subtitle-b border-white rounded-full my-4  py-1 px-4 text-white hover:bg-pink transition-all duration-200">
+          <button className="bg-secondary border-2 mobile-subtitle-b border-white rounded-full my-4 lg:my-10  py-1 px-4 text-white hover:bg-pink transition-all duration-200">
             Detail
           </button>
         </div>
       </div>
-      <div className="w-full min-h-[300px] overflow-hidden  rounded-xl shadow-xl bg-secondary">
-        <div className="w-full h-[70px] bg-purple flex flex-row justify-between px-6 items-center">
+      <div className="w-full min-h-[300px] overflow-hidden  rounded-xl shadow-xl h-[50vh] lg:align-top bg-secondary">
+        <div className="w-full h-[70px] bg-purple flex flex-row justify-between px-6 lg:px-10 items-center">
           <h1 className="mobile-price text-white">Full</h1>
           <div className=" text-white leading-4">
             <p className="mobile-title">
@@ -62,7 +62,7 @@ function PriceList() {
             </p>
           </div>
         </div>
-        <div className="px-6 py-3 w-full justify-center flex flex-col">
+        <div className="px-6 lg:px-10 py-3 w-full justify-center flex flex-col">
           <ul className="list-disc text-white leading-5 space-y-2">
             <li className="">
               <span className="mobile-title-b">All Chat and Events </span>
@@ -84,7 +84,7 @@ function PriceList() {
               </span>
             </li>
           </ul>
-          <button className="bg-secondary border-2 mobile-subtitle-b border-white rounded-full my-4  py-1 px-4 text-white hover:bg-pink transition-all duration-200">
+          <button className="bg-secondary border-2 mobile-subtitle-b border-white rounded-full my-4 lg:my-10 py-1 px-4 text-white hover:bg-pink transition-all duration-200">
             Detail
           </button>
         </div>

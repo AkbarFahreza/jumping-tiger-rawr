@@ -74,17 +74,17 @@ function page() {
                   height={10}
                   alt="Foto Ku Jir"
                   src="/Profile_pict.png"
-                  className="md:w-52 md:h-52"
+                  className="md:w-32 md:h-32"
                 />
                 <div className="ml-4 md:m-auto md:mt-6 md:flex md:flex-col md:justify-center">
-                  <p className="text-white text-2xl md:text-5xl font-bold md:text-center">
+                  <p className="text-white text-2xl md:text-3xl font-bold md:text-center">
                     DEK REZA
                   </p>
                   <div className="flex flex-row md:m-auto md:mt-4">
-                    <p class="py-1 px-2 whitespace-nowrap rounded-full bg-purple text-white font-bold text-xs md:text-xl md:py-2 md:px-4">
+                    <p class="py-1 px-2 whitespace-nowrap rounded-full bg-purple text-white font-bold text-xs md:text-sm ">
                       Jr. Designer
                     </p>
-                    <p class="py-1 px-2 whitespace-nowrap ml-2 bg-pink rounded-full text-white font-bold text-xs md:text-xl md:py-2 md:px-4">
+                    <p class="py-1 px-2 whitespace-nowrap ml-2 bg-pink rounded-full text-white font-bold text-xs md:text-sm ">
                       Jr. Developer
                     </p>
                   </div>
@@ -96,7 +96,7 @@ function page() {
                 transition={{ duration: 0.7, delay: 0.3 }}
                 className="mt-4 md:mt-7 md:max-w-4xl md:mx-auto md:text-center"
               >
-                <p className="text-white hidden md:flex  text-2xl">{text}</p>
+                <p className="text-white hidden md:flex  text-md">{text}</p>
                 <p className="text-white  mobile-subtitle  md:hidden overflow-hidden">
                   {truncatedText}
                   <button

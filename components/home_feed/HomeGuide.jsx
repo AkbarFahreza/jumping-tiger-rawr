@@ -33,9 +33,7 @@ function HomeGuide() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-row justify-between mt-6">
-        <p className="mobile-heading-b text-pink  md:text-3xl">
-          Might Help You
-        </p>
+        <p className="mobile-heading-b text-pink  md:text-xl">Might Help You</p>
         <button className="moreBtn">More</button>
       </div>
       {loading ? (

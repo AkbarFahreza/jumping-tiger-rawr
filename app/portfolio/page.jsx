@@ -87,9 +87,9 @@ function HomePortfolio() {
             {category}
           </button>
         ))}
-        <button onClick={toggleSortOrder}>
+        {/* <button onClick={toggleSortOrder}>
           {sortOrder === "asc" ? "Sort Descending" : "Sort Ascending"}
-        </button>
+        </button> */}
       </div>
 
       <div className="mt-4">
@@ -102,24 +102,26 @@ function HomePortfolio() {
             })
             .map(([date, itemsForDate]) => (
               <div key={date} className="mb-4">
-                <h2 className="font-bold text-white">{date}</h2>
-                <div className="flex flex-wrap justify-center gap-3">
+                <h2 className="font-bold text-pink text-xl md:text-2xl mb-4">
+                  {date}
+                </h2>
+                <div className="flex flex-row  gap-4  whitespace-nowrap overflow-x-scroll">
                   {/* Render items for the current date */}
                   {itemsForDate.map((item) => (
                     <Link
                       href={item.sourceLink}
                       key={item.id}
-                      className="flex flex-col w-[47%] sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3"
+                      className="flex flex-col shrink-0 min-w-[100px] scale-95 hover:scale-100 transition-all duration-200"
                     >
                       <Image
                         width={200}
                         height={200}
                         alt={item.name}
-                        className="w-full h-auto rounded-md"
+                        className="w-[200px] h-auto rounded-md"
                         src={item.image}
                       />
                       <div className="mt-2">
-                        <h1 className="font-bold mobile-subtitle-b text-white">
+                        <h1 className="font-bold mobile-subtitle-b text-center text-white">
                           {item.name}
                         </h1>
                       </div>

@@ -37,7 +37,7 @@ function HomePortfolio() {
   return (
     <div className="flex flex-col md:mt-6">
       <div className="flex flex-row justify-between align-middle">
-        <p className="mobile-heading-b font-bold text-pink md:text-4xl">
+        <p className="mobile-heading-b font-bold text-pink md:text-2xl">
           Portfolio
         </p>
         <button href="/portfolio" className="moreBtn">
@@ -47,7 +47,7 @@ function HomePortfolio() {
       {loading ? (
         <Loading />
       ) : (
-        <div className="mt-4 lg:mt-8 flex flex-row space-x-4 lg:space-x-8 whitespace-nowrap overflow-x-scroll">
+        <div className="mt-4  flex flex-row space-x-4 lg:space-x-8 whitespace-nowrap overflow-x-scroll">
           {items.map((item) => (
             <Link
               href={item.sourceLink} // Update to use "sourceLink" instead of "source_link"
@@ -58,11 +58,11 @@ function HomePortfolio() {
                 width={200}
                 height={200}
                 alt={item.name}
-                className="w-[200px] h-auto rounded-md lg:w-[400px]"
+                className="w-[200px] h-auto rounded-md lg:w-[250px]"
                 src={item.image}
               />
               <div className="mt-2">
-                <h1 className="font-bold mobile-title-b text-white lg:text-2xl">
+                <h1 className="font-bold mobile-title-b text-white lg:text-md">
                   {item.name}
                 </h1>
               </div>
@@ -70,7 +70,7 @@ function HomePortfolio() {
           ))}
           <Link
             href="/portfolio"
-            className="h-[200px] lg:h-[400px] w-4 p-4 relative  bg-purple/25"
+            className="h-[200px] lg:h-[250px] w-4 p-4 relative  bg-purple/25"
           >
             <p className="mx-auto align-middle  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 font-bold text-white lg:text-2xl">
               {originalDataLength - 4}+ More

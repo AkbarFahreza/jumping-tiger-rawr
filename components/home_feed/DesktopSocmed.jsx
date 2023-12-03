@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 function DesktopSocmed() {
   return (
-    <div className="flex-row gap-10 mt-4 md:flex justify-center hidden mx-auto ">
+    <div className="flex-row gap-3 mt-4 md:flex justify-center hidden mx-auto ">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -13,7 +13,7 @@ function DesktopSocmed() {
         <Link href="https://twitter.com/Revernry" className="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="44px"
+            height="25px"
             viewBox="0 0 448 512"
           >
             <path
@@ -31,7 +31,7 @@ function DesktopSocmed() {
         <Link href="https://discord.com/channels/@me/524150079825903617">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="44px"
+            height="25px"
             viewBox="0 0 640 512"
           >
             <path
@@ -49,7 +49,7 @@ function DesktopSocmed() {
         <Link href="https://instagram.com/Revernry">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="44px"
+            height="25px"
             viewBox="0 0 448 512"
           >
             <path
