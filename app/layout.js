@@ -26,6 +26,11 @@ export default function RootLayout({ children }) {
         content="https://res.cloudinary.com/dxcmt3zoc/image/upload/v1700500680/Group_35_2_wiftx7.png"
       />
       <link rel="icon" href="/Profile_pict.png" />
+      <meta property="og:url" content="https://dekreza.site/" />
+      <meta
+        name="twitter:card"
+        content="https://res.cloudinary.com/dxcmt3zoc/image/upload/v1700500680/Group_35_2_wiftx7.png"
+      />
       {/* <meta property="og:url" content="https://yourwebsite.com" /> */}
       <body className={`${inter.className} relative min-h-[100vh]`}>
         <div className="">
