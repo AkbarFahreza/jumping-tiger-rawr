@@ -35,35 +35,34 @@ function HomePortfolio() {
   }, []);
 
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-row justify-between">
-        <p className="mobile-heading-b font-bold text-pink">Portfolio</p>
-        <button
-          href="/portfolio"
-          className="bg-secondary border-2 text-xs border-white rounded-full py-1 px-3 text-white"
-        >
+    <div className="flex flex-col md:mt-6">
+      <div className="flex flex-row justify-between align-middle">
+        <p className="mobile-heading-b font-bold text-pink md:text-4xl">
+          Portfolio
+        </p>
+        <button href="/portfolio" className="moreBtn">
           More
         </button>
       </div>
       {loading ? (
         <Loading />
       ) : (
-        <div className="mt-4 flex flex-row space-x-4 whitespace-nowrap overflow-x-scroll">
+        <div className="mt-4 lg:mt-8 flex flex-row space-x-4 lg:space-x-8 whitespace-nowrap overflow-x-scroll">
           {items.map((item) => (
             <Link
               href={item.sourceLink} // Update to use "sourceLink" instead of "source_link"
               key={item.id}
-              className="flex flex-col shrink-0 min-w-[200px]"
+              className="flex flex-col shrink-0 min-w-[200px] lg:pb-6"
             >
               <Image
                 width={200}
                 height={200}
                 alt={item.name}
-                className="w-[200px] h-auto rounded-md"
+                className="w-[200px] h-auto rounded-md lg:w-[400px]"
                 src={item.image}
               />
               <div className="mt-2">
-                <h1 className="font-bold mobile-title-b text-white">
+                <h1 className="font-bold mobile-title-b text-white lg:text-2xl">
                   {item.name}
                 </h1>
               </div>
@@ -71,9 +70,9 @@ function HomePortfolio() {
           ))}
           <Link
             href="/portfolio"
-            className="h-[200px] w-4 p-4 relative  bg-purple/25"
+            className="h-[200px] lg:h-[400px] w-4 p-4 relative  bg-purple/25"
           >
-            <p className="mx-auto align-middle  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 font-bold text-white">
+            <p className="mx-auto align-middle  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 font-bold text-white lg:text-2xl">
               {originalDataLength - 4}+ More
             </p>
           </Link>

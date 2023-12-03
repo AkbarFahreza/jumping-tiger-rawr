@@ -8,13 +8,14 @@ import { usePathname } from "next/navigation";
 function BottomBar() {
   const pathname = usePathname();
   return (
-    <ul className="w-full bg-secondary py-2 flex flex-row justify-evenly fixed bottom-0 left-0">
+    <ul className="w-full bg-secondary py-2 md:py-6 flex flex-row justify-evenly fixed bottom-0 left-0">
       <Link href="/">
-        <div className="flex flex-col justify-center">
+        <div className="bottom-nav-items">
           <Image
             width={24}
             height={24}
             alt="Image"
+            id="profPict"
             src="/Profile_pict.png"
             className={`m-auto border-2  rounded-full transition-all duration-300 ${
               pathname === "/" ? "border-pink" : "border-white"
@@ -22,7 +23,7 @@ function BottomBar() {
           />
 
           <p
-            className={`mt-1 text-center text-xs transition-all duration-300 ${
+            className={`bottom-nav-text ${
               pathname === "/"
                 ? "text-pink font-medium"
                 : "text-white font-medium"
@@ -33,7 +34,7 @@ function BottomBar() {
         </div>
       </Link>
       <Link href="/comms-info">
-        <div className="flex flex-col justify-center">
+        <div className="bottom-nav-items">
           <svg
             width="23"
             height="23"
@@ -51,7 +52,7 @@ function BottomBar() {
             />
           </svg>
           <p
-            className={`mt-1 text-center text-xs transition-all duration-300 ${
+            className={`bottom-nav-text ${
               pathname === "/comms-info"
                 ? "text-pink font-medium"
                 : "text-white font-medium"
@@ -62,7 +63,7 @@ function BottomBar() {
         </div>
       </Link>
       <Link href="/portfolio">
-        <div className="flex flex-col justify-center">
+        <div className="bottom-nav-items">
           <svg
             width="24"
             height="23"
@@ -80,7 +81,7 @@ function BottomBar() {
             />
           </svg>
           <p
-            className={`mt-1 text-center text-xs transition-all duration-300 ${
+            className={`bottom-nav-text ${
               pathname === "/portfolio"
                 ? "text-pink font-medium"
                 : "text-white font-medium"
@@ -91,7 +92,7 @@ function BottomBar() {
         </div>
       </Link>
       <Link href="/guides">
-        <div className="flex flex-col justify-center">
+        <div className="bottom-nav-items">
           <svg
             width="24"
             height="23"
@@ -108,7 +109,7 @@ function BottomBar() {
           </svg>
 
           <p
-            className={`mt-1 text-center text-xs transition-all duration-300 ${
+            className={`bottom-nav-text ${
               pathname === "/guides"
                 ? "text-pink font-medium"
                 : "text-white font-medium"

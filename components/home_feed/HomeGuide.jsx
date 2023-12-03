@@ -33,10 +33,10 @@ function HomeGuide() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-row justify-between mt-6">
-        <p className="mobile-heading-b text-pink">Might Help You</p>
-        <button className="bg-secondary border-2 text-xs border-white rounded-full py-1 px-3 text-white">
-          More
-        </button>
+        <p className="mobile-heading-b text-pink  md:text-3xl">
+          Might Help You
+        </p>
+        <button className="moreBtn">More</button>
       </div>
       {loading ? (
         // Render a loading spinner while fetching data
