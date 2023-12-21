@@ -91,7 +91,7 @@ function BottomBar() {
           </p>
         </div>
       </Link>
-      <Link href="/guides">
+      {/* <Link href="/guides">
         <div className="bottom-nav-items">
           <svg
             width="24"
@@ -118,7 +118,7 @@ function BottomBar() {
             Guides
           </p>
         </div>
-      </Link>
+      </Link> */}
     </ul>
   );
 }

@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-function TermOfServices() {
+function YTLC_TermOfServices() {
   const controls = useAnimation();
 
   const handleScroll = () => {
@@ -150,4 +150,4 @@ function TermOfServices() {
   );
 }
 
-export default TermOfServices;
+export default YTLC_TermOfServices;

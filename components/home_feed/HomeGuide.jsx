@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
+import Link from "next/link";
 
 function truncateText(text, maxLength) {
   if (text.length <= maxLength) {
@@ -42,7 +43,11 @@ function HomeGuide() {
       ) : (
         <div className="mt-4 flex flex-row space-x-4 whitespace-nowrap overflow-x-scroll pb-20">
           {items.map((item) => (
-            <div key={item.id} className="flex flex-col shrink-0 max-w-[250px]">
+            <Link
+              href={item.source_link}
+              key={item.id}
+              className="flex flex-col shrink-0 max-w-[250px]"
+            >
               <Image
                 width={356}
                 height={200}
@@ -56,7 +61,7 @@ function HomeGuide() {
                   {truncateText(item.desc, 100)}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       )}
