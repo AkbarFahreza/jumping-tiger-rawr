@@ -16,8 +16,8 @@ function YTLC_CommsPage() {
       <div className="flex flex-row justify-between items-center  my-6">
         <p className="mobile-heading-b text-white">
           Status :{" "}
-          <span className="text-red-500">
-            Close (Available for coding only)
+          <span className="text-green-500">
+            Open
           </span>
         </p>
         <div className="flex flex-row space-x-3">
