@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 
 function YTLC_TermOfServices() {
@@ -26,7 +27,7 @@ function YTLC_TermOfServices() {
   return (
     <div className="mb-20">
       <p className="text-[10px] text-gray-400 font-bold my-2">
-        Updated at : 27 Nov 2023
+        Updated at : 07 March 2023
       </p>
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -55,6 +56,16 @@ function YTLC_TermOfServices() {
           <li className="mobile-subtitle list-disc text-white">
             Contact me via Discord/Twitter.
           </li>
+          <li className="mobile-subtitle list-disc text-white">
+            Download Project example{" "}
+            <Link
+              className="text-blue-500 font-bold"
+              href="https://drive.google.com/drive/folders/1gABlu_fmFgjiwhYvzY2hoqHsTyCVPusg"
+            >
+              Here for free
+            </Link>{" "}
+            (containing installation guide).
+          </li>
         </ul>
       </motion.div>
       <motion.div
@@ -69,13 +80,17 @@ function YTLC_TermOfServices() {
             software you use for streaming so I can adjust.
           </li>
           <li className="mobile-subtitle mt-[4px] list-disc text-white">
+            The custom CSS file only can be use on Youtube Livechat Browser
+            source.
+          </li>
+          <li className="mobile-subtitle mt-[4px] list-disc text-white">
             I do not provide additional assets for livechat (assets from
             clients), i only make simple assets, because i am not artist hehe.
           </li>
           <li className="mobile-subtitle mt-[4px] list-disc text-white">
             Work estimates can be known after discussion because it depends on
             the progress currently underway,{" "}
-            <span className="font-bold">generally 2-4 weeks.</span>
+            <span className="font-bold">generally 7-21 Days.</span>
           </li>
           <li className="mobile-subtitle mt-[4px] list-disc text-white">
             Keep in mind that there are several shapes of Livechat design that
