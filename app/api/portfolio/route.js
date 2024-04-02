@@ -157,14 +157,7 @@ const items = [
         category: "YT Chat Commissions",
         Datecreated: "Desember 2023",
       },
-      {
-        id: 18,
-        name: "Vera Dinita",
-        image: "https://pbs.twimg.com/media/GKAYojFa0AEWwcT?format=jpg&name=medium",
-        sourceLink: "https://twitter.com/Revernry/status/1775174253106868355",
-        category: "YT Chat Commissions",
-        Datecreated: "Desember 2023",
-      },
+     
       {
         id: 19,
         name: "Vera Dinita",
