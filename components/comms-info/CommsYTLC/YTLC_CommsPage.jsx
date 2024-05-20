@@ -17,7 +17,7 @@ function YTLC_CommsPage() {
         <p className="mobile-heading-b text-white">
           Status :{" "}
           <span className="text-red-500">
-            Closed until May
+            Closed until June
           </span>
         </p>
         <div className="flex flex-row space-x-3">

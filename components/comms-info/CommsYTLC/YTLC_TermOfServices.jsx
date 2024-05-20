@@ -27,7 +27,7 @@ function YTLC_TermOfServices() {
   return (
     <div className="mb-20">
       <p className="text-[10px] text-gray-400 font-bold my-2">
-        Updated at : 07 March 2023
+        Updated at : 20 May 2024
       </p>
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -156,7 +156,7 @@ function YTLC_TermOfServices() {
             One item can only be used for one person.
           </li>
           <li className="mobile-subtitle mt-[4px] list-disc text-white">
-            If there are errors / other faults during use within 1 year after
+            If there are errors, updates from youtube, and other faults during use within 6 Months after
             the project is completed, no repair costs will be charged.
           </li>
         </ul>
